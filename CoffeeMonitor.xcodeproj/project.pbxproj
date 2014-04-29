@@ -23,6 +23,8 @@
 		A3707551190FF66600294F12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3707550190FF66600294F12 /* Images.xcassets */; };
 		A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A38ADD1D19100EA400ED5270 /* AppDelegateSpec.mm */; };
 		A38ADD211910102900ED5270 /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38ADD201910102900ED5270 /* BalanceViewController.m */; };
+		A3AF9041191043AB0057F98D /* BalanceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9040191043AB0057F98D /* BalanceRequest.m */; };
+		A3AF9044191043E30057F98D /* BalanceRequestSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9043191043E30057F98D /* BalanceRequestSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,9 @@
 		A38ADD1D19100EA400ED5270 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
 		A38ADD1F1910102900ED5270 /* BalanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceViewController.h; sourceTree = "<group>"; };
 		A38ADD201910102900ED5270 /* BalanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceViewController.m; sourceTree = "<group>"; };
+		A3AF903F191043AB0057F98D /* BalanceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceRequest.h; sourceTree = "<group>"; };
+		A3AF9040191043AB0057F98D /* BalanceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceRequest.m; sourceTree = "<group>"; };
+		A3AF9043191043E30057F98D /* BalanceRequestSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BalanceRequestSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 		A307A0F7190FFAC900793C95 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				A3AF9042191043C00057F98D /* API */,
 				A307A0FD190FFAC900793C95 /* ExampleSpec.mm */,
 				A38ADD1D19100EA400ED5270 /* AppDelegateSpec.mm */,
 				A307A0FF190FFAC900793C95 /* Rakefile */,
@@ -133,6 +139,7 @@
 		A3707544190FF66600294F12 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A3AF903E191043830057F98D /* API */,
 				A370754D190FF66600294F12 /* AppDelegate.h */,
 				A370754E190FF66600294F12 /* AppDelegate.m */,
 				A3707550190FF66600294F12 /* Images.xcassets */,
@@ -152,6 +159,23 @@
 				A370754C190FF66600294F12 /* CoffeeMonitor-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3AF903E191043830057F98D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A3AF903F191043AB0057F98D /* BalanceRequest.h */,
+				A3AF9040191043AB0057F98D /* BalanceRequest.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A3AF9042191043C00057F98D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A3AF9043191043E30057F98D /* BalanceRequestSpec.mm */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AF9044191043E30057F98D /* BalanceRequestSpec.mm in Sources */,
 				A307A0FE190FFAC900793C95 /* ExampleSpec.mm in Sources */,
 				A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */,
 			);
@@ -271,6 +296,7 @@
 			files = (
 				A370754F190FF66600294F12 /* AppDelegate.m in Sources */,
 				A38ADD211910102900ED5270 /* BalanceViewController.m in Sources */,
+				A3AF9041191043AB0057F98D /* BalanceRequest.m in Sources */,
 				A370754B190FF66600294F12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
