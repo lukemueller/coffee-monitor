@@ -21,6 +21,8 @@
 		A370754B190FF66600294F12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A370754A190FF66600294F12 /* main.m */; };
 		A370754F190FF66600294F12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A370754E190FF66600294F12 /* AppDelegate.m */; };
 		A3707551190FF66600294F12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3707550190FF66600294F12 /* Images.xcassets */; };
+		A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A38ADD1D19100EA400ED5270 /* AppDelegateSpec.mm */; };
+		A38ADD211910102900ED5270 /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38ADD201910102900ED5270 /* BalanceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,9 @@
 		A370754E190FF66600294F12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A3707550190FF66600294F12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A3707557190FF66600294F12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A38ADD1D19100EA400ED5270 /* AppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegateSpec.mm; sourceTree = "<group>"; };
+		A38ADD1F1910102900ED5270 /* BalanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceViewController.h; sourceTree = "<group>"; };
+		A38ADD201910102900ED5270 /* BalanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A307A0FD190FFAC900793C95 /* ExampleSpec.mm */,
+				A38ADD1D19100EA400ED5270 /* AppDelegateSpec.mm */,
 				A307A0FF190FFAC900793C95 /* Rakefile */,
 				A307A100190FFAC900793C95 /* Cedar-iOS.framework */,
 				A307A0F8190FFAC900793C95 /* Supporting Files */,
@@ -131,6 +137,8 @@
 				A370754E190FF66600294F12 /* AppDelegate.m */,
 				A3707550190FF66600294F12 /* Images.xcassets */,
 				A3707545190FF66600294F12 /* Supporting Files */,
+				A38ADD1F1910102900ED5270 /* BalanceViewController.h */,
+				A38ADD201910102900ED5270 /* BalanceViewController.m */,
 			);
 			path = CoffeeMonitor;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A307A0FE190FFAC900793C95 /* ExampleSpec.mm in Sources */,
+				A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A370754F190FF66600294F12 /* AppDelegate.m in Sources */,
+				A38ADD211910102900ED5270 /* BalanceViewController.m in Sources */,
 				A370754B190FF66600294F12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
