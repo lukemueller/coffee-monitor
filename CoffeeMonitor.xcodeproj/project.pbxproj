@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A307A0F3190FFAC900793C95 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A307A0F2190FFAC900793C95 /* SenTestingKit.framework */; };
+		A307A0F4190FFAC900793C95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707540190FF66600294F12 /* CoreGraphics.framework */; };
+		A307A0F5190FFAC900793C95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707542190FF66600294F12 /* UIKit.framework */; };
+		A307A0F6190FFAC900793C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A370753E190FF66600294F12 /* Foundation.framework */; };
+		A307A0FC190FFAC900793C95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A307A0FA190FFAC900793C95 /* InfoPlist.strings */; };
+		A307A0FE190FFAC900793C95 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A307A0FD190FFAC900793C95 /* ExampleSpec.mm */; };
+		A307A101190FFAC900793C95 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A307A100190FFAC900793C95 /* Cedar-iOS.framework */; };
 		A370753F190FF66600294F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A370753E190FF66600294F12 /* Foundation.framework */; };
 		A3707541190FF66600294F12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707540190FF66600294F12 /* CoreGraphics.framework */; };
 		A3707543190FF66600294F12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707542190FF66600294F12 /* UIKit.framework */; };
@@ -32,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A307A0F1190FFAC900793C95 /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A307A0F2190FFAC900793C95 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A307A0F9190FFAC900793C95 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		A307A0FB190FFAC900793C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A307A0FD190FFAC900793C95 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		A307A0FF190FFAC900793C95 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		A307A100190FFAC900793C95 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		A307A102190FFAC900793C95 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		A370753B190FF66600294F12 /* CoffeeMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A370753E190FF66600294F12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3707540190FF66600294F12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,6 +66,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A307A0ED190FFAC900793C95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A307A0F4190FFAC900793C95 /* CoreGraphics.framework in Frameworks */,
+				A307A0F5190FFAC900793C95 /* UIKit.framework in Frameworks */,
+				A307A101190FFAC900793C95 /* Cedar-iOS.framework in Frameworks */,
+				A307A0F3190FFAC900793C95 /* SenTestingKit.framework in Frameworks */,
+				A307A0F6190FFAC900793C95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3707538190FF66600294F12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,11 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A307A0F7190FFAC900793C95 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				A307A0FD190FFAC900793C95 /* ExampleSpec.mm */,
+				A307A0FF190FFAC900793C95 /* Rakefile */,
+				A307A100190FFAC900793C95 /* Cedar-iOS.framework */,
+				A307A0F8190FFAC900793C95 /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		A307A0F8190FFAC900793C95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A307A0F9190FFAC900793C95 /* Specs-Info.plist */,
+				A307A0FA190FFAC900793C95 /* InfoPlist.strings */,
+				A307A102190FFAC900793C95 /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A3707532190FF66600294F12 = {
 			isa = PBXGroup;
 			children = (
 				A3707544190FF66600294F12 /* CoffeeMonitor */,
 				A370755D190FF66600294F12 /* CoffeeMonitorTests */,
+				A307A0F7190FFAC900793C95 /* Specs */,
 				A370753D190FF66600294F12 /* Frameworks */,
 				A370753C190FF66600294F12 /* Products */,
 			);
@@ -89,6 +138,7 @@
 			children = (
 				A370753B190FF66600294F12 /* CoffeeMonitor.app */,
 				A3707556190FF66600294F12 /* CoffeeMonitorTests.xctest */,
+				A307A0F1190FFAC900793C95 /* Specs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +150,7 @@
 				A3707540190FF66600294F12 /* CoreGraphics.framework */,
 				A3707542190FF66600294F12 /* UIKit.framework */,
 				A3707557190FF66600294F12 /* XCTest.framework */,
+				A307A0F2190FFAC900793C95 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,6 +198,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A307A0F0190FFAC900793C95 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A307A105190FFAC900793C95 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				A307A0EC190FFAC900793C95 /* Sources */,
+				A307A0ED190FFAC900793C95 /* Frameworks */,
+				A307A0EE190FFAC900793C95 /* Resources */,
+				A307A0EF190FFAC900793C95 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = A307A0F1190FFAC900793C95 /* Specs.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		A370753A190FF66600294F12 /* CoffeeMonitor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3707567190FF66600294F12 /* Build configuration list for PBXNativeTarget "CoffeeMonitor" */;
@@ -210,11 +279,20 @@
 			targets = (
 				A370753A190FF66600294F12 /* CoffeeMonitor */,
 				A3707555190FF66600294F12 /* CoffeeMonitorTests */,
+				A307A0F0190FFAC900793C95 /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A307A0EE190FFAC900793C95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A307A0FC190FFAC900793C95 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3707539190FF66600294F12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,7 +312,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A307A0EF190FFAC900793C95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A307A0EC190FFAC900793C95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A307A0FE190FFAC900793C95 /* ExampleSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3707537190FF66600294F12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +365,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A307A0FA190FFAC900793C95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A307A0FB190FFAC900793C95 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		A3707547190FF66600294F12 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +392,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A307A103190FFAC900793C95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoffeeMonitor.app/CoffeeMonitor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A307A104190FFAC900793C95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoffeeMonitor.app/CoffeeMonitor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		A3707565190FF66600294F12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -346,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -360,6 +522,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoffeeMonitor/CoffeeMonitor-Prefix.pch";
 				INFOPLIST_FILE = "CoffeeMonitor/CoffeeMonitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,6 +536,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoffeeMonitor/CoffeeMonitor-Prefix.pch";
 				INFOPLIST_FILE = "CoffeeMonitor/CoffeeMonitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,6 +585,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A307A105190FFAC900793C95 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A307A103190FFAC900793C95 /* Debug */,
+				A307A104190FFAC900793C95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3707536190FF66600294F12 /* Build configuration list for PBXProject "CoffeeMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -437,6 +610,7 @@
 				A3707569190FF66600294F12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A370756A190FF66600294F12 /* Build configuration list for PBXNativeTarget "CoffeeMonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +619,7 @@
 				A370756C190FF66600294F12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

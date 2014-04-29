@@ -29,12 +29,22 @@
       buildConfiguration = "Debug">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3707555190FF66600294F12"
                BuildableName = "CoffeeMonitorTests.xctest"
                BlueprintName = "CoffeeMonitorTests"
+               ReferencedContainer = "container:CoffeeMonitor.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A307A0F0190FFAC900793C95"
+               BuildableName = "Specs.octest"
+               BlueprintName = "Specs"
                ReferencedContainer = "container:CoffeeMonitor.xcodeproj">
             </BuildableReference>
          </TestableReference>
