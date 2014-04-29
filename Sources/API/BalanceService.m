@@ -7,6 +7,7 @@
 //
 
 #import "BalanceService.h"
+#import "BalanceRequest.h"
 
 
 @implementation BalanceService
@@ -22,10 +23,10 @@
 }
 
 - (int)getBalance {
-    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://example.com/balance"]];
+    BalanceRequest *request = [[BalanceRequest alloc] init];
     NSURLResponse *urlResponse = [[NSURLResponse alloc] init];
     NSError *error = [[NSError alloc] init];
-    [self.serviceConnection sendRequest:urlRequest returningResponse:urlResponse error:error];
+    [self.serviceConnection sendRequest:request returningResponse:urlResponse error:error];
 
     return 0;
 }

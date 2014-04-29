@@ -11,6 +11,6 @@
 
 @interface TestServiceConnection : ServiceConnection
 
-@property(strong, nonatomic, readwrite)NSURLRequest *urlRequest;
+@property(strong, nonatomic, readwrite)Request *request;
 
 @end

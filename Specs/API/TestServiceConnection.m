@@ -11,11 +11,11 @@
 
 @implementation TestServiceConnection
 
-- (NSData *)sendRequest:(NSURLRequest *)urlRequest
+- (NSData *)sendRequest:(Request *)request
       returningResponse:(NSURLResponse *)urlResponse
                   error:(NSError *)error
 {
-    [self setUrlRequest:urlRequest];
+    [self setRequest:request];
 
     return [[NSData alloc] init];
 }

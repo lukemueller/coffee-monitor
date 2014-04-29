@@ -6,10 +6,12 @@
 //  Copyright (c) 2014 pivotal.chicago. All rights reserved.
 //
 
+#import "Request.h"
+
 
 @interface ServiceConnection : NSObject
 
-- (NSData *)sendRequest:(NSURLRequest *)urlRequest
+- (NSData *)sendRequest:(Request *)Request
       returningResponse:(NSURLResponse *)urlResponse
                   error:(NSError *)error;
 

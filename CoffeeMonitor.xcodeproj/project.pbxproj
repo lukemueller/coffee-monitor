@@ -29,6 +29,7 @@
 		A3AF904A191048270057F98D /* TestServiceConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9049191048270057F98D /* TestServiceConnection.m */; };
 		A3AF904D1910486C0057F98D /* BalanceService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF904C1910486C0057F98D /* BalanceService.m */; };
 		A3AF904F1910488D0057F98D /* BalanceServiceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */; };
+		A3AF9052191058860057F98D /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9051191058860057F98D /* Request.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		A3AF904B1910486C0057F98D /* BalanceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceService.h; sourceTree = "<group>"; };
 		A3AF904C1910486C0057F98D /* BalanceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceService.m; sourceTree = "<group>"; };
 		A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BalanceServiceSpec.mm; sourceTree = "<group>"; };
+		A3AF9050191058860057F98D /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		A3AF9051191058860057F98D /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 				A3AF9046191047650057F98D /* ServiceConnection.m */,
 				A3AF904B1910486C0057F98D /* BalanceService.h */,
 				A3AF904C1910486C0057F98D /* BalanceService.m */,
+				A3AF9050191058860057F98D /* Request.h */,
+				A3AF9051191058860057F98D /* Request.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				A3AF9047191047650057F98D /* ServiceConnection.m in Sources */,
 				A3AF904D1910486C0057F98D /* BalanceService.m in Sources */,
 				A370754B190FF66600294F12 /* main.m in Sources */,
+				A3AF9052191058860057F98D /* Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

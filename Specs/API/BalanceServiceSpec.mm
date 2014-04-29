@@ -1,5 +1,6 @@
 #import "BalanceService.h"
 #import "TestServiceConnection.h"
+#import "BalanceRequest.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
@@ -19,9 +20,8 @@ describe(@"BalanceService", ^{
         it(@"should make a balance request through the service connection", ^{
             [balanceService getBalance];
 
-            NSURLRequest *urlRequest = testServiceConnection.urlRequest;
-            [urlRequest HTTPMethod] should equal(@"GET");
-            [[urlRequest URL] absoluteString] should equal(@"http://example.com/balance");
+            Request *request = testServiceConnection.request;
+            request should be_instance_of([BalanceRequest class]);
         });
     });
 });
