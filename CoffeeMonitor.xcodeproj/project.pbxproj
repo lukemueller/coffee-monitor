@@ -102,7 +102,7 @@
 		A3707532190FF66600294F12 = {
 			isa = PBXGroup;
 			children = (
-				A3707544190FF66600294F12 /* CoffeeMonitor */,
+				A3707544190FF66600294F12 /* Sources */,
 				A307A0F7190FFAC900793C95 /* Specs */,
 				A370753D190FF66600294F12 /* Frameworks */,
 				A370753C190FF66600294F12 /* Products */,
@@ -130,7 +130,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A3707544190FF66600294F12 /* CoffeeMonitor */ = {
+		A3707544190FF66600294F12 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				A370754D190FF66600294F12 /* AppDelegate.h */,
@@ -140,7 +140,7 @@
 				A38ADD1F1910102900ED5270 /* BalanceViewController.h */,
 				A38ADD201910102900ED5270 /* BalanceViewController.m */,
 			);
-			path = CoffeeMonitor;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		A3707545190FF66600294F12 /* Supporting Files */ = {
@@ -425,8 +425,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoffeeMonitor/CoffeeMonitor-Prefix.pch";
-				INFOPLIST_FILE = "CoffeeMonitor/CoffeeMonitor-Info.plist";
+				GCC_PREFIX_HEADER = "Sources/CoffeeMonitor-Prefix.pch";
+				INFOPLIST_FILE = "Sources/CoffeeMonitor-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -439,8 +439,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoffeeMonitor/CoffeeMonitor-Prefix.pch";
-				INFOPLIST_FILE = "CoffeeMonitor/CoffeeMonitor-Info.plist";
+				GCC_PREFIX_HEADER = "Sources/CoffeeMonitor-Prefix.pch";
+				INFOPLIST_FILE = "Sources/CoffeeMonitor-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
