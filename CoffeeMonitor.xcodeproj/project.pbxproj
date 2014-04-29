@@ -25,6 +25,10 @@
 		A38ADD211910102900ED5270 /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A38ADD201910102900ED5270 /* BalanceViewController.m */; };
 		A3AF9041191043AB0057F98D /* BalanceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9040191043AB0057F98D /* BalanceRequest.m */; };
 		A3AF9044191043E30057F98D /* BalanceRequestSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9043191043E30057F98D /* BalanceRequestSpec.mm */; };
+		A3AF9047191047650057F98D /* ServiceConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9046191047650057F98D /* ServiceConnection.m */; };
+		A3AF904A191048270057F98D /* TestServiceConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9049191048270057F98D /* TestServiceConnection.m */; };
+		A3AF904D1910486C0057F98D /* BalanceService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF904C1910486C0057F98D /* BalanceService.m */; };
+		A3AF904F1910488D0057F98D /* BalanceServiceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,13 @@
 		A3AF903F191043AB0057F98D /* BalanceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceRequest.h; sourceTree = "<group>"; };
 		A3AF9040191043AB0057F98D /* BalanceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceRequest.m; sourceTree = "<group>"; };
 		A3AF9043191043E30057F98D /* BalanceRequestSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BalanceRequestSpec.mm; sourceTree = "<group>"; };
+		A3AF9045191047650057F98D /* ServiceConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceConnection.h; sourceTree = "<group>"; };
+		A3AF9046191047650057F98D /* ServiceConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceConnection.m; sourceTree = "<group>"; };
+		A3AF9048191048270057F98D /* TestServiceConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestServiceConnection.h; sourceTree = "<group>"; };
+		A3AF9049191048270057F98D /* TestServiceConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestServiceConnection.m; sourceTree = "<group>"; };
+		A3AF904B1910486C0057F98D /* BalanceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceService.h; sourceTree = "<group>"; };
+		A3AF904C1910486C0057F98D /* BalanceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceService.m; sourceTree = "<group>"; };
+		A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BalanceServiceSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +177,10 @@
 			children = (
 				A3AF903F191043AB0057F98D /* BalanceRequest.h */,
 				A3AF9040191043AB0057F98D /* BalanceRequest.m */,
+				A3AF9045191047650057F98D /* ServiceConnection.h */,
+				A3AF9046191047650057F98D /* ServiceConnection.m */,
+				A3AF904B1910486C0057F98D /* BalanceService.h */,
+				A3AF904C1910486C0057F98D /* BalanceService.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -174,6 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				A3AF9043191043E30057F98D /* BalanceRequestSpec.mm */,
+				A3AF9048191048270057F98D /* TestServiceConnection.h */,
+				A3AF9049191048270057F98D /* TestServiceConnection.m */,
+				A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -286,7 +304,9 @@
 			files = (
 				A3AF9044191043E30057F98D /* BalanceRequestSpec.mm in Sources */,
 				A307A0FE190FFAC900793C95 /* ExampleSpec.mm in Sources */,
+				A3AF904F1910488D0057F98D /* BalanceServiceSpec.mm in Sources */,
 				A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */,
+				A3AF904A191048270057F98D /* TestServiceConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +317,8 @@
 				A370754F190FF66600294F12 /* AppDelegate.m in Sources */,
 				A38ADD211910102900ED5270 /* BalanceViewController.m in Sources */,
 				A3AF9041191043AB0057F98D /* BalanceRequest.m in Sources */,
+				A3AF9047191047650057F98D /* ServiceConnection.m in Sources */,
+				A3AF904D1910486C0057F98D /* BalanceService.m in Sources */,
 				A370754B190FF66600294F12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
