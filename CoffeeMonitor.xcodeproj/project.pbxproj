@@ -21,22 +21,7 @@
 		A370754B190FF66600294F12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A370754A190FF66600294F12 /* main.m */; };
 		A370754F190FF66600294F12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A370754E190FF66600294F12 /* AppDelegate.m */; };
 		A3707551190FF66600294F12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3707550190FF66600294F12 /* Images.xcassets */; };
-		A3707558190FF66600294F12 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707557190FF66600294F12 /* XCTest.framework */; };
-		A3707559190FF66600294F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A370753E190FF66600294F12 /* Foundation.framework */; };
-		A370755A190FF66600294F12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707542190FF66600294F12 /* UIKit.framework */; };
-		A3707562190FF66600294F12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3707560190FF66600294F12 /* InfoPlist.strings */; };
-		A3707564190FF66600294F12 /* CoffeeMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3707563190FF66600294F12 /* CoffeeMonitorTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A370755B190FF66600294F12 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A3707533190FF66600294F12 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A370753A190FF66600294F12;
-			remoteInfo = CoffeeMonitor;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A307A0F1190FFAC900793C95 /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,11 +43,7 @@
 		A370754D190FF66600294F12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A370754E190FF66600294F12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A3707550190FF66600294F12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A3707556190FF66600294F12 /* CoffeeMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3707557190FF66600294F12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A370755F190FF66600294F12 /* CoffeeMonitorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoffeeMonitorTests-Info.plist"; sourceTree = "<group>"; };
-		A3707561190FF66600294F12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A3707563190FF66600294F12 /* CoffeeMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeMonitorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,16 +66,6 @@
 				A3707541190FF66600294F12 /* CoreGraphics.framework in Frameworks */,
 				A3707543190FF66600294F12 /* UIKit.framework in Frameworks */,
 				A370753F190FF66600294F12 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3707553190FF66600294F12 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3707558190FF66600294F12 /* XCTest.framework in Frameworks */,
-				A370755A190FF66600294F12 /* UIKit.framework in Frameworks */,
-				A3707559190FF66600294F12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				A3707544190FF66600294F12 /* CoffeeMonitor */,
-				A370755D190FF66600294F12 /* CoffeeMonitorTests */,
 				A307A0F7190FFAC900793C95 /* Specs */,
 				A370753D190FF66600294F12 /* Frameworks */,
 				A370753C190FF66600294F12 /* Products */,
@@ -137,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				A370753B190FF66600294F12 /* CoffeeMonitor.app */,
-				A3707556190FF66600294F12 /* CoffeeMonitorTests.xctest */,
 				A307A0F1190FFAC900793C95 /* Specs.octest */,
 			);
 			name = Products;
@@ -173,24 +142,6 @@
 				A3707547190FF66600294F12 /* InfoPlist.strings */,
 				A370754A190FF66600294F12 /* main.m */,
 				A370754C190FF66600294F12 /* CoffeeMonitor-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A370755D190FF66600294F12 /* CoffeeMonitorTests */ = {
-			isa = PBXGroup;
-			children = (
-				A3707563190FF66600294F12 /* CoffeeMonitorTests.m */,
-				A370755E190FF66600294F12 /* Supporting Files */,
-			);
-			path = CoffeeMonitorTests;
-			sourceTree = "<group>";
-		};
-		A370755E190FF66600294F12 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A370755F190FF66600294F12 /* CoffeeMonitorTests-Info.plist */,
-				A3707560190FF66600294F12 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,24 +184,6 @@
 			productReference = A370753B190FF66600294F12 /* CoffeeMonitor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A3707555190FF66600294F12 /* CoffeeMonitorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A370756A190FF66600294F12 /* Build configuration list for PBXNativeTarget "CoffeeMonitorTests" */;
-			buildPhases = (
-				A3707552190FF66600294F12 /* Sources */,
-				A3707553190FF66600294F12 /* Frameworks */,
-				A3707554190FF66600294F12 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A370755C190FF66600294F12 /* PBXTargetDependency */,
-			);
-			name = CoffeeMonitorTests;
-			productName = CoffeeMonitorTests;
-			productReference = A3707556190FF66600294F12 /* CoffeeMonitorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,11 +192,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = pivotal.chicago;
-				TargetAttributes = {
-					A3707555190FF66600294F12 = {
-						TestTargetID = A370753A190FF66600294F12;
-					};
-				};
 			};
 			buildConfigurationList = A3707536190FF66600294F12 /* Build configuration list for PBXProject "CoffeeMonitor" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -278,7 +206,6 @@
 			projectRoot = "";
 			targets = (
 				A370753A190FF66600294F12 /* CoffeeMonitor */,
-				A3707555190FF66600294F12 /* CoffeeMonitorTests */,
 				A307A0F0190FFAC900793C95 /* Specs */,
 			);
 		};
@@ -299,14 +226,6 @@
 			files = (
 				A3707549190FF66600294F12 /* InfoPlist.strings in Resources */,
 				A3707551190FF66600294F12 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3707554190FF66600294F12 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3707562190FF66600294F12 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,23 +265,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3707552190FF66600294F12 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3707564190FF66600294F12 /* CoffeeMonitorTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A370755C190FF66600294F12 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A370753A190FF66600294F12 /* CoffeeMonitor */;
-			targetProxy = A370755B190FF66600294F12 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A307A0FA190FFAC900793C95 /* InfoPlist.strings */ = {
@@ -377,14 +280,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A3707548190FF66600294F12 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A3707560190FF66600294F12 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3707561190FF66600294F12 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -542,46 +437,6 @@
 			};
 			name = Release;
 		};
-		A370756B190FF66600294F12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoffeeMonitor.app/CoffeeMonitor";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoffeeMonitor/CoffeeMonitor-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "CoffeeMonitorTests/CoffeeMonitorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A370756C190FF66600294F12 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoffeeMonitor.app/CoffeeMonitor";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoffeeMonitor/CoffeeMonitor-Prefix.pch";
-				INFOPLIST_FILE = "CoffeeMonitorTests/CoffeeMonitorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,15 +463,6 @@
 			buildConfigurations = (
 				A3707568190FF66600294F12 /* Debug */,
 				A3707569190FF66600294F12 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A370756A190FF66600294F12 /* Build configuration list for PBXNativeTarget "CoffeeMonitorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A370756B190FF66600294F12 /* Debug */,
-				A370756C190FF66600294F12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
