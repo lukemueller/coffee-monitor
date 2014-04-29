@@ -11,7 +11,7 @@
 
 @interface ServiceConnection : NSObject
 
-- (NSData *)sendRequest:(Request *)Request
+- (NSData *)sendRequest:(Request *)request
       returningResponse:(NSURLResponse *)urlResponse
                   error:(NSError *)error;
 

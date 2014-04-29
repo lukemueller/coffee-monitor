@@ -8,6 +8,16 @@
 
 #import "ServiceConnection.h"
 
+
 @implementation ServiceConnection
+
+- (NSData *)sendRequest:(Request *)request
+      returningResponse:(NSURLResponse *)urlResponse
+                  error:(NSError *)error
+{
+    return [NSURLConnection sendSynchronousRequest:request.urlRequest
+                                 returningResponse:&urlResponse
+                                             error:&error];
+}
 
 @end
