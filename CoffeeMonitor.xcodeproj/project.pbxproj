@@ -12,7 +12,6 @@
 		A307A0F5190FFAC900793C95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707542190FF66600294F12 /* UIKit.framework */; };
 		A307A0F6190FFAC900793C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A370753E190FF66600294F12 /* Foundation.framework */; };
 		A307A0FC190FFAC900793C95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A307A0FA190FFAC900793C95 /* InfoPlist.strings */; };
-		A307A0FE190FFAC900793C95 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A307A0FD190FFAC900793C95 /* ExampleSpec.mm */; };
 		A307A101190FFAC900793C95 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A307A100190FFAC900793C95 /* Cedar-iOS.framework */; };
 		A370753F190FF66600294F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A370753E190FF66600294F12 /* Foundation.framework */; };
 		A3707541190FF66600294F12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3707540190FF66600294F12 /* CoreGraphics.framework */; };
@@ -37,7 +36,6 @@
 		A307A0F2190FFAC900793C95 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A307A0F9190FFAC900793C95 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		A307A0FB190FFAC900793C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A307A0FD190FFAC900793C95 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		A307A0FF190FFAC900793C95 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		A307A100190FFAC900793C95 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		A307A102190FFAC900793C95 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				A3AF9042191043C00057F98D /* API */,
-				A307A0FD190FFAC900793C95 /* ExampleSpec.mm */,
 				A38ADD1D19100EA400ED5270 /* AppDelegateSpec.mm */,
 				A307A0FF190FFAC900793C95 /* Rakefile */,
 				A307A100190FFAC900793C95 /* Cedar-iOS.framework */,
@@ -308,7 +305,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3AF9044191043E30057F98D /* BalanceRequestSpec.mm in Sources */,
-				A307A0FE190FFAC900793C95 /* ExampleSpec.mm in Sources */,
 				A3AF904F1910488D0057F98D /* BalanceServiceSpec.mm in Sources */,
 				A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */,
 				A3AF904A191048270057F98D /* TestServiceConnection.m in Sources */,
