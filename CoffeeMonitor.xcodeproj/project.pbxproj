@@ -243,7 +243,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = pivotal.chicago;
+				ORGANIZATIONNAME = "Luke Mueller";
 			};
 			buildConfigurationList = A3707536190FF66600294F12 /* Build configuration list for PBXProject "CoffeeMonitor" */;
 			compatibilityVersion = "Xcode 3.2";
