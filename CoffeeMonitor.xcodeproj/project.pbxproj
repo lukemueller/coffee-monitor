@@ -32,6 +32,8 @@
 		A3AF904D1910486C0057F98D /* BalanceService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF904C1910486C0057F98D /* BalanceService.m */; };
 		A3AF904F1910488D0057F98D /* BalanceServiceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */; };
 		A3AF9052191058860057F98D /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9051191058860057F98D /* Request.m */; };
+		A3B9B7181911A21F00DAE6DD /* TransactionsRequestSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B7171911A21F00DAE6DD /* TransactionsRequestSpec.mm */; };
+		A3B9B71B1911A2AC00DAE6DD /* TransactionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B71A1911A2AC00DAE6DD /* TransactionsRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,9 @@
 		A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BalanceServiceSpec.mm; sourceTree = "<group>"; };
 		A3AF9050191058860057F98D /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		A3AF9051191058860057F98D /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		A3B9B7171911A21F00DAE6DD /* TransactionsRequestSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TransactionsRequestSpec.mm; sourceTree = "<group>"; };
+		A3B9B7191911A2AC00DAE6DD /* TransactionsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsRequest.h; sourceTree = "<group>"; };
+		A3B9B71A1911A2AC00DAE6DD /* TransactionsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +197,8 @@
 				A3AF904C1910486C0057F98D /* BalanceService.m */,
 				A3AF9050191058860057F98D /* Request.h */,
 				A3AF9051191058860057F98D /* Request.m */,
+				A3B9B7191911A2AC00DAE6DD /* TransactionsRequest.h */,
+				A3B9B71A1911A2AC00DAE6DD /* TransactionsRequest.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -205,6 +212,7 @@
 				A3AF904E1910488D0057F98D /* BalanceServiceSpec.mm */,
 				A31409CE191140D600395EDE /* TestBalanceService.h */,
 				A31409CF191140D600395EDE /* TestBalanceService.m */,
+				A3B9B7171911A21F00DAE6DD /* TransactionsRequestSpec.mm */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 			files = (
 				A3AF9044191043E30057F98D /* BalanceRequestSpec.mm in Sources */,
 				A3AF904F1910488D0057F98D /* BalanceServiceSpec.mm in Sources */,
+				A3B9B7181911A21F00DAE6DD /* TransactionsRequestSpec.mm in Sources */,
 				A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */,
 				A31409CD19113FCE00395EDE /* BalanceViewControllerSpec.mm in Sources */,
 				A31409D0191140D600395EDE /* TestBalanceService.m in Sources */,
@@ -335,6 +344,7 @@
 				A3AF9047191047650057F98D /* ServiceConnection.m in Sources */,
 				A3AF904D1910486C0057F98D /* BalanceService.m in Sources */,
 				A370754B190FF66600294F12 /* main.m in Sources */,
+				A3B9B71B1911A2AC00DAE6DD /* TransactionsRequest.m in Sources */,
 				A3AF9052191058860057F98D /* Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
