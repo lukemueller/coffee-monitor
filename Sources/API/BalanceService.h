@@ -14,6 +14,6 @@
 
 - (instancetype)initWithServiceConnection:(ServiceConnection *)serviceConnection;
 
-- (int)getBalance;
+- (NSNumber *)getBalance;
 
 @end

@@ -12,7 +12,7 @@
 @interface ServiceConnection : NSObject
 
 - (NSData *)sendRequest:(Request *)request
-      returningResponse:(NSURLResponse *)urlResponse
-                  error:(NSError *)error;
+      returningResponse:(NSURLResponse *__autoreleasing *)urlResponse
+                  error:(NSError *__autoreleasing *)error;
 
 @end

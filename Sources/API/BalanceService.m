@@ -22,13 +22,18 @@
     return self;
 }
 
-- (int)getBalance {
+- (NSNumber *)getBalance {
     BalanceRequest *request = [[BalanceRequest alloc] init];
-    NSURLResponse *urlResponse = [[NSURLResponse alloc] init];
-    NSError *error = [[NSError alloc] init];
-    [self.serviceConnection sendRequest:request returningResponse:urlResponse error:error];
+    NSHTTPURLResponse *urlResponse = nil;
+    NSError *error = nil;
+    NSData *data = [self.serviceConnection sendRequest:request returningResponse:&urlResponse error:&error];
 
-    return 0;
+    if (error != nil || [urlResponse statusCode] != 200) {
+        return nil;
+    }
+
+    id jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    return jsonResponse[@"amount"];
 }
 
 @end

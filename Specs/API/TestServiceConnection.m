@@ -12,12 +12,26 @@
 @implementation TestServiceConnection
 
 - (NSData *)sendRequest:(Request *)request
-      returningResponse:(NSURLResponse *)urlResponse
-                  error:(NSError *)error
+      returningResponse:(NSURLResponse *__autoreleasing *)urlResponse
+                  error:(NSError *__autoreleasing *)error
 {
-    [self setRequest:request];
+    self.request = request;
+    *urlResponse = self.urlResponse;
+    *error = self.error;
 
-    return [[NSData alloc] init];
+    return self.data;
+}
+
+- (void)stubResponse:(NSURLResponse *)urlResponse {
+    self.urlResponse = urlResponse;
+}
+
+- (void)stubData:(NSData *)data {
+    self.data = data;
+}
+
+- (void)stubError:(NSError *)error {
+    self.error = error;
 }
 
 @end
