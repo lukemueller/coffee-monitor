@@ -12,10 +12,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    BalanceViewController *balanceController = [[BalanceViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:balanceController];
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    ServiceConnection *serviceConnection = [[ServiceConnection alloc] init];
+    BalanceService *balanceService = [[BalanceService alloc] initWithServiceConnection:serviceConnection];
+    self.window.rootViewController = [[BalanceViewController alloc] initWithBalanceService:balanceService];
     [self.window makeKeyAndVisible];
     return YES;
 }

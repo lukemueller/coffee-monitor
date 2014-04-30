@@ -18,13 +18,20 @@ describe(@"AppDelegate", ^{
             [appDelegate application:nil didFinishLaunchingWithOptions:@{}];
         });
         
-        it(@"should set the root controller to be the navigation controller", ^{
-            appDelegate.window.rootViewController should be_instance_of([UINavigationController class]);
+        it(@"should set the balance controller as the root view controller", ^{
+            appDelegate.window.rootViewController should be_instance_of([BalanceViewController class]);
         });
-        
-        it(@"should set the balance controller as the top level navigation controller", ^{
-            UINavigationController *navigationController = (UINavigationController *)appDelegate.window.rootViewController;
-            navigationController.topViewController should be_instance_of([BalanceViewController class]);
+
+        it(@"should init the BalanceViewController with a BalanceService", ^{
+            BalanceViewController *controller = (BalanceViewController *)appDelegate.window.rootViewController;
+            controller.balanceService should_not be_nil;
+        });
+
+        it(@"should init the balance service with a service connection", ^{
+            BalanceViewController *controller = (BalanceViewController *)appDelegate.window.rootViewController;
+            ServiceConnection *connection = controller.balanceService.serviceConnection;
+
+            connection should_not be_nil;
         });
     });
     
