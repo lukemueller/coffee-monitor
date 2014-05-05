@@ -34,6 +34,9 @@
 		A3AF9052191058860057F98D /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AF9051191058860057F98D /* Request.m */; };
 		A3B9B7181911A21F00DAE6DD /* TransactionsRequestSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B7171911A21F00DAE6DD /* TransactionsRequestSpec.mm */; };
 		A3B9B71B1911A2AC00DAE6DD /* TransactionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B71A1911A2AC00DAE6DD /* TransactionsRequest.m */; };
+		A3B9B71E1911A44200DAE6DD /* TransactionsService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B71D1911A44200DAE6DD /* TransactionsService.m */; };
+		A3B9B7201911A50900DAE6DD /* TransactionsServiceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B71F1911A50900DAE6DD /* TransactionsServiceSpec.mm */; };
+		A3B9B7231911AC8400DAE6DD /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B7221911AC8400DAE6DD /* Transaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,11 @@
 		A3B9B7171911A21F00DAE6DD /* TransactionsRequestSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TransactionsRequestSpec.mm; sourceTree = "<group>"; };
 		A3B9B7191911A2AC00DAE6DD /* TransactionsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsRequest.h; sourceTree = "<group>"; };
 		A3B9B71A1911A2AC00DAE6DD /* TransactionsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsRequest.m; sourceTree = "<group>"; };
+		A3B9B71C1911A44200DAE6DD /* TransactionsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsService.h; sourceTree = "<group>"; };
+		A3B9B71D1911A44200DAE6DD /* TransactionsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsService.m; sourceTree = "<group>"; };
+		A3B9B71F1911A50900DAE6DD /* TransactionsServiceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TransactionsServiceSpec.mm; sourceTree = "<group>"; };
+		A3B9B7211911AC8400DAE6DD /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		A3B9B7221911AC8400DAE6DD /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,8 @@
 				A38ADD1F1910102900ED5270 /* BalanceViewController.h */,
 				A38ADD201910102900ED5270 /* BalanceViewController.m */,
 				A3463F2B19115BD800245CC2 /* CoffeeMonitor.storyboard */,
+				A3B9B7211911AC8400DAE6DD /* Transaction.h */,
+				A3B9B7221911AC8400DAE6DD /* Transaction.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -199,6 +209,8 @@
 				A3AF9051191058860057F98D /* Request.m */,
 				A3B9B7191911A2AC00DAE6DD /* TransactionsRequest.h */,
 				A3B9B71A1911A2AC00DAE6DD /* TransactionsRequest.m */,
+				A3B9B71C1911A44200DAE6DD /* TransactionsService.h */,
+				A3B9B71D1911A44200DAE6DD /* TransactionsService.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -213,6 +225,7 @@
 				A31409CE191140D600395EDE /* TestBalanceService.h */,
 				A31409CF191140D600395EDE /* TestBalanceService.m */,
 				A3B9B7171911A21F00DAE6DD /* TransactionsRequestSpec.mm */,
+				A3B9B71F1911A50900DAE6DD /* TransactionsServiceSpec.mm */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -331,6 +344,7 @@
 				A31409CD19113FCE00395EDE /* BalanceViewControllerSpec.mm in Sources */,
 				A31409D0191140D600395EDE /* TestBalanceService.m in Sources */,
 				A3AF904A191048270057F98D /* TestServiceConnection.m in Sources */,
+				A3B9B7201911A50900DAE6DD /* TransactionsServiceSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B9B71E1911A44200DAE6DD /* TransactionsService.m in Sources */,
 				A370754F190FF66600294F12 /* AppDelegate.m in Sources */,
 				A38ADD211910102900ED5270 /* BalanceViewController.m in Sources */,
 				A3AF9041191043AB0057F98D /* BalanceRequest.m in Sources */,
@@ -345,6 +360,7 @@
 				A3AF904D1910486C0057F98D /* BalanceService.m in Sources */,
 				A370754B190FF66600294F12 /* main.m in Sources */,
 				A3B9B71B1911A2AC00DAE6DD /* TransactionsRequest.m in Sources */,
+				A3B9B7231911AC8400DAE6DD /* Transaction.m in Sources */,
 				A3AF9052191058860057F98D /* Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
