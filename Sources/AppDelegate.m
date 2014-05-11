@@ -15,7 +15,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     ServiceConnection *serviceConnection = [[ServiceConnection alloc] init];
     BalanceService *balanceService = [[BalanceService alloc] initWithServiceConnection:serviceConnection];
-    self.window.rootViewController = [[BalanceViewController alloc] initWithBalanceService:balanceService];
+    TransactionsService *transactionService = [[TransactionsService alloc] initWithServiceConnection:serviceConnection];
+    self.window.rootViewController = [[BalanceViewController alloc] initWithBalanceService:balanceService
+                                                                    withTransactionService:transactionService];
     [self.window makeKeyAndVisible];
     return YES;
 }

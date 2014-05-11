@@ -6,6 +6,7 @@
 //
 
 #import "BalanceViewController.h"
+#import "Transaction.h"
 
 @interface BalanceViewController ()
 
@@ -13,10 +14,13 @@
 
 @implementation BalanceViewController
 
-- (instancetype)initWithBalanceService:(BalanceService *)balanceService {
+- (instancetype)initWithBalanceService:(BalanceService *)balanceService
+                withTransactionService:(TransactionsService *)transactionsService
+{
     self = [super init];
     if (self) {
         self.balanceService = balanceService;
+        self.transactionsService = transactionsService;
     }
     return self;
 }
@@ -35,6 +39,9 @@
     [super viewDidLoad];
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+
+    self.balance = [self.balanceService getBalance];
+    self.transactions = [self.transactionsService getTransactions];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,16 +59,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [self.transactions count] + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    cell.textLabel.text = [formatter stringFromNumber:[self.balanceService getBalance]];
+
+    if (indexPath.row == 0) {
+        cell.textLabel.text = [formatter stringFromNumber:self.balance];
+    } else {
+        Transaction *transaction = self.transactions[indexPath.row - 1];
+        cell.textLabel.text = [formatter stringFromNumber:[transaction amount]];
+    }
 
     return cell;
 }

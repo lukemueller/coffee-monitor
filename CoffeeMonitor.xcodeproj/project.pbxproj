@@ -37,6 +37,7 @@
 		A3B9B71E1911A44200DAE6DD /* TransactionsService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B71D1911A44200DAE6DD /* TransactionsService.m */; };
 		A3B9B7201911A50900DAE6DD /* TransactionsServiceSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B71F1911A50900DAE6DD /* TransactionsServiceSpec.mm */; };
 		A3B9B7231911AC8400DAE6DD /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B7221911AC8400DAE6DD /* Transaction.m */; };
+		A3C2701819185CEE00DC91B1 /* TestTransactionsService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C2701719185CEE00DC91B1 /* TestTransactionsService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,8 @@
 		A3B9B71F1911A50900DAE6DD /* TransactionsServiceSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TransactionsServiceSpec.mm; sourceTree = "<group>"; };
 		A3B9B7211911AC8400DAE6DD /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
 		A3B9B7221911AC8400DAE6DD /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		A3C2701619185CEE00DC91B1 /* TestTransactionsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTransactionsService.h; sourceTree = "<group>"; };
+		A3C2701719185CEE00DC91B1 /* TestTransactionsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTransactionsService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +229,8 @@
 				A31409CF191140D600395EDE /* TestBalanceService.m */,
 				A3B9B7171911A21F00DAE6DD /* TransactionsRequestSpec.mm */,
 				A3B9B71F1911A50900DAE6DD /* TransactionsServiceSpec.mm */,
+				A3C2701619185CEE00DC91B1 /* TestTransactionsService.h */,
+				A3C2701719185CEE00DC91B1 /* TestTransactionsService.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				A3B9B7181911A21F00DAE6DD /* TransactionsRequestSpec.mm in Sources */,
 				A38ADD1E19100EA400ED5270 /* AppDelegateSpec.mm in Sources */,
 				A31409CD19113FCE00395EDE /* BalanceViewControllerSpec.mm in Sources */,
+				A3C2701819185CEE00DC91B1 /* TestTransactionsService.m in Sources */,
 				A31409D0191140D600395EDE /* TestBalanceService.m in Sources */,
 				A3AF904A191048270057F98D /* TestServiceConnection.m in Sources */,
 				A3B9B7201911A50900DAE6DD /* TransactionsServiceSpec.mm in Sources */,
